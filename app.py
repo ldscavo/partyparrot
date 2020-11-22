@@ -27,3 +27,5 @@ def slack():
     except ValueError as e:
         return jsonify(text=str(e))
 
+if __name__ == '__main__':
+    app.run(port=os.environ.get('PORT', 5000))
